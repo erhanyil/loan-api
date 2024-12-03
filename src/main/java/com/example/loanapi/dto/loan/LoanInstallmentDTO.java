@@ -1,4 +1,4 @@
-package com.example.loanapi.dto;
+package com.example.loanapi.dto.loan;
 
 import lombok.Data;
 

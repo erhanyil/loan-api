@@ -1,4 +1,14 @@
 package com.example.loanapi.service;
 
-public class UserService {
+
+import com.example.loanapi.model.UserModel;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+public interface UserService {
+
+    UserDetails loadUserByUsername(String username) throws UsernameNotFoundException;
+    UserModel getCredentials();
 }
+
+

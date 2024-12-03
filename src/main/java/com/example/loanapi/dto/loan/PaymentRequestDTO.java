@@ -1,2 +1,10 @@
-package com.example.loanapi.dto;public class PaymentRequestDTO {
+package com.example.loanapi.dto.loan;
+
+import lombok.Data;
+
+import java.math.BigDecimal;
+
+@Data
+public class PaymentRequestDTO {
+    private BigDecimal amount;
 }
